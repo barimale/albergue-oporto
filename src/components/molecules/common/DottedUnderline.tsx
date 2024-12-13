@@ -3,7 +3,7 @@ import React from 'react';
 import { DeviceContextConsumer, DeviceType } from '../../../contexts/DeviceContext';
 
 type DottedUnderlineProps = {
-    centerUnderline?: boolean;
+  centerUnderline?: boolean;
 }
 export const DottedUnderline = (props: DottedUnderlineProps) => {
   const { centerUnderline } = props;

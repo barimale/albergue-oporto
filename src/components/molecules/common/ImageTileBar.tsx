@@ -6,9 +6,9 @@ import { DeviceContextConsumer, DeviceType } from '../../../contexts/DeviceConte
 import { ImageDetails } from '../../pages/GalleryPageContent';
 
 type ImageTileBarProps = {
-    item: ImageDetails;
-    id: string;
-    isOpen: boolean;
+  item: ImageDetails;
+  id: string;
+  isOpen: boolean;
 }
 
 export const ImageTileBar = (props: ImageTileBarProps) => {
@@ -22,7 +22,7 @@ export const ImageTileBar = (props: ImageTileBarProps) => {
         <>
           <Typography
             id={props.id}
-            onClick={(event:any) => {
+            onClick={(event: any) => {
               event.stopPropagation();
               setIsModalDisplayed(true);
             }}

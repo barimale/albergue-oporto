@@ -8,11 +8,11 @@ import { PortaledMarker } from './PortaledMarker';
 import { CreateLayerItem } from '../../organisms/SightseeingContent';
 
 type OverlayyProps = {
-    items: MapItem[] | undefined;
-    keyy: string;
-    outerIndex: number;
-    prefix: string;
-    icon: L.Icon | L.DivIcon
+  items: MapItem[] | undefined;
+  keyy: string;
+  outerIndex: number;
+  prefix: string;
+  icon: L.Icon | L.DivIcon
 };
 
 export const LegendedOverlay = (props: OverlayyProps) => {

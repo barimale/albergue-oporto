@@ -7,8 +7,8 @@ import { Image } from './Image';
 import { ImageDetails } from '../../pages/GalleryPageContent';
 
 type ImageTileProps = {
-    index: number;
-    tile: ImageDetails;
+  index: number;
+  tile: ImageDetails;
 };
 export const ImageTile = (props: ImageTileProps) => {
   const { tile, index } = props;
@@ -29,7 +29,7 @@ export const ImageTile = (props: ImageTileProps) => {
                 item={tile}
                 id={(context.valueOf() === DeviceType.isDesktopOrLaptop ? 'ccm' : 'ccd') + index}
               />
-)}
+            )}
           />
         </>
       )}

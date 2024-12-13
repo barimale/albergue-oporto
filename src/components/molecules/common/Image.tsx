@@ -1,8 +1,8 @@
 import React from 'react';
 
 export type ImageProps = {
-    src: string;
-    alt: string;
+  src: string;
+  alt: string;
 };
 
 export const Image = (props: ImageProps) => {

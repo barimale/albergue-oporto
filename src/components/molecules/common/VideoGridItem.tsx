@@ -31,7 +31,7 @@ export const VideoGridItem = (props: any) => {
               >
                 {t(tile.description)}
               </div>
-)}
+            )}
             actionIcon={(
               <IconButton
                 aria-label={`info about ${t(tile.description)}`}
@@ -45,7 +45,7 @@ export const VideoGridItem = (props: any) => {
                 }}
                 />
               </IconButton>
-)}
+            )}
           />
           <CardMedia
             src="video"

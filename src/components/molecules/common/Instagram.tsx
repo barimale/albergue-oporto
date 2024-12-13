@@ -48,17 +48,17 @@ export const Instagram = (props: CommunicateProps) => {
             }}
             />
             {showLong === true && (
-            <Typography
-              noWrap
-              style={{
-                paddingLeft: context === DeviceType.isDesktopOrLaptop ? '10px' : '10px',
-                color: isLight !== undefined && isLight === true ? `${theme.palette.common.white}` : `${thirdMain}`,
-                fontFamily: 'Signoria-Bold',
-                fontSize: context === DeviceType.isDesktopOrLaptop ? '16px' : '10px',
-              }}
-            >
-              {t('Instagram')}
-            </Typography>
+              <Typography
+                noWrap
+                style={{
+                  paddingLeft: context === DeviceType.isDesktopOrLaptop ? '10px' : '10px',
+                  color: isLight !== undefined && isLight === true ? `${theme.palette.common.white}` : `${thirdMain}`,
+                  fontFamily: 'Signoria-Bold',
+                  fontSize: context === DeviceType.isDesktopOrLaptop ? '16px' : '10px',
+                }}
+              >
+                {t('Instagram')}
+              </Typography>
             )}
           </div>
         </IconButton>

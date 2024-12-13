@@ -18,7 +18,7 @@ export const LocationAdvice = (props: any) => {
 
   return (
     <DeviceContextConsumer>
-      { (context) => (
+      {(context) => (
         <CopyToClipboard
           TooltipProps={{
             title: copiedMessage, leaveDelay: 1000, leaveTouchDelay: 1000,

@@ -3,8 +3,8 @@ import React, { PropsWithChildren, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 
 type LegendEntryProps = {
-    parentId: string;
-    content: string;
+  parentId: string;
+  content: string;
 }
 
 const LegendEntry: React.FC<PropsWithChildren<LegendEntryProps>> = (

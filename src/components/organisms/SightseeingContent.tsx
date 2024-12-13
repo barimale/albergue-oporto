@@ -121,7 +121,7 @@ const places: Array<MapItem> = [
   },
 ];
 
-export function CreateLayerItem (name: string): string {
+export function CreateLayerItem(name: string): string {
   const asString = ReactDOMServer.renderToString(
     React.createElement(
       LayerItem,

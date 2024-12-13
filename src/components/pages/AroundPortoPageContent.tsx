@@ -8,7 +8,7 @@ import { RestaurantsContent } from '../organisms/RestaurantsContent';
 import { LivingContent } from '../organisms/LivingContent';
 import { SightseeingContent } from '../organisms/SightseeingContent';
 
-export default function AroundPortoPageContent () {
+export default function AroundPortoPageContent() {
   return (
     <ContentWithTabs />
   );
@@ -35,7 +35,7 @@ const ContentWithTabs = () => {
                 setWelcomeTabsHeight(size.height || 0);
               }}
             />
-                )}
+          )}
           content={(
             <div style={{
               height: context === DeviceType.isDesktopOrLaptop ? '100%' : '100%',
@@ -74,7 +74,7 @@ const ContentWithTabs = () => {
                 <TransportContent />
               </TabPanel>
             </div>
-            )}
+          )}
         />
       )}
     </DeviceContextConsumer>

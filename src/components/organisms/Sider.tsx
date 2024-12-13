@@ -21,7 +21,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-function SiderLeft (props: any) {
+function SiderLeft(props: any) {
   const { style } = props;
   const classes = useStyles();
 

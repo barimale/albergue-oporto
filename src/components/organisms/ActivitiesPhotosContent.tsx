@@ -135,7 +135,7 @@ export const ActivitiesPhotosContent = () => {
                 ? 3
                 : ((window.innerWidth / 2 > 200) ? 2 : 1)}
             >
-              {tileData(deviceTypeName).map((tile, index:number) => (
+              {tileData(deviceTypeName).map((tile, index: number) => (
                 tile.isVideo.valueOf() === true ? (
                   <GridListTile key={index} cols={tile.cols || 1}>
                     <VideoGridItem tile={tile} />

@@ -123,7 +123,7 @@ export const FacilitiesContent = () => {
 };
 
 type FacilityCategoryProps = {
-    title: string;
+  title: string;
 }
 
 const FacilityCategory = (props: PropsWithChildren<FacilityCategoryProps>) => {
@@ -172,8 +172,8 @@ const FacilityCategory = (props: PropsWithChildren<FacilityCategoryProps>) => {
 };
 
 type FacilityItemProps = {
-    iconComponent: JSX.Element;
-    description: string;
+  iconComponent: JSX.Element;
+  description: string;
 }
 
 const FacilityItem = (props: FacilityItemProps) => {

@@ -7,11 +7,11 @@ const ShopPageContent = lazy(() => import('../pages/ShopPageContent'));
 export const Path = '/shop';
 export const Title = 'Shop offer';
 
-export function ShopPage () {
+export function ShopPage() {
   return (
     <Suspense fallback={
       <LoadingInProgress />
-        }
+    }
     >
       <ContentLayout>
         <ShopPageContent />

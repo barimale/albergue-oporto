@@ -4,23 +4,23 @@ import React, { useEffect, useState } from 'react';
 import { ReservationForm } from '../organisms/ReservationForm';
 
 export type ReservationDetails = {
-    firstName: string;
-    lastName: string;
-    email: string;
-    phone: string;
-    message: string;
-    checkIn: string;
-    checkOut: string;
-    documentType: string;
-    passport: string;
-    sex: string;
-    age: string;
-    nationality: string;
-    documentCountryExpeditor: string;
-    residenceCountry: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  message: string;
+  checkIn: string;
+  checkOut: string;
+  documentType: string;
+  passport: string;
+  sex: string;
+  age: string;
+  nationality: string;
+  documentCountryExpeditor: string;
+  residenceCountry: string;
 }
 
-export default function ReservationPageContent () {
+export default function ReservationPageContent() {
   return (
     <ReservationForm />
     // <ExternalReservation />
@@ -35,7 +35,7 @@ const ExternalReservation = () => {
   );
 
   useEffect(() => {
-    function removeMenu () {
+    function removeMenu() {
       if (iframeRef && iframeRef?.current) {
         const allDivs = iframeRef.current.querySelectorAll('div.col-sm-2');
         iframeRef.current.removeChild(allDivs[0]);

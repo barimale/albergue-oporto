@@ -22,11 +22,11 @@ const useStyles = makeStyles(() => createStyles({
 }));
 
 export type ImageDetails = {
-    src: string;
-    description: string;
-    author: string;
-    cols: number;
-    isVideo?: boolean;
+  src: string;
+  description: string;
+  author: string;
+  cols: number;
+  isVideo?: boolean;
 }
 
 const tileData = (deviceType: string) => [
@@ -104,7 +104,7 @@ const tileData = (deviceType: string) => [
   },
 ];
 
-export default function GalleryPageContent () {
+export default function GalleryPageContent() {
   return (
     <Content />
   );
@@ -150,7 +150,7 @@ const Content = () => {
             >
               {t('Gallery').toUpperCase()}
             </Typography>
-              )}
+          )}
           content={(
             <div style={{
               height: '100%',
@@ -165,7 +165,7 @@ const Content = () => {
                 cols={context.valueOf() === DeviceType.isDesktopOrLaptop
                   ? 3 : ((window.innerWidth / 2 > 200) ? 2 : 1)}
               >
-                {tileData(deviceTypeName).map((tile, index:number) => (
+                {tileData(deviceTypeName).map((tile, index: number) => (
                   <GridListTile
                     style={{
                       cursor: 'pointer',
@@ -186,7 +186,7 @@ const Content = () => {
                 ))}
               </GridList>
             </div>
-              )}
+          )}
         />
       )}
     </DeviceContextConsumer>

@@ -38,7 +38,7 @@ const Footer = (props: any) => {
 
   return (
     <DeviceContextConsumer>
-      { (context) => (
+      {(context) => (
         <footer
           className={[
             classes.root,
@@ -61,7 +61,7 @@ const Footer = (props: any) => {
 
 const FooterContent = (props: any) => (
   <DeviceContextConsumer>
-    { (context) => (
+    {(context) => (
       <div
         {...props}
         style={{

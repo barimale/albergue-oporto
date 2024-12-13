@@ -8,7 +8,7 @@ import TheWayTabs, { indexer, parentId, tabPrefix } from '../molecules/common/Th
 import { PortugeseCentralContent } from '../organisms/PortugeseCentralContent';
 import { PortugeseCoastContent } from '../organisms/PortugeseCoastContent';
 
-export default function TheWayPageContent () {
+export default function TheWayPageContent() {
   return (
     <ContentWithTabs />
   );
@@ -35,7 +35,7 @@ const ContentWithTabs = () => {
                 setWelcomeTabsHeight(size.height || 0);
               }}
             />
-              )}
+          )}
           content={(
             <div className={classes.root}>
               <div style={{
@@ -60,7 +60,7 @@ const ContentWithTabs = () => {
                 </TabPanel>
               </div>
             </div>
-              )}
+          )}
         />
       )}
     </DeviceContextConsumer>

@@ -68,13 +68,13 @@ const tileData = (deviceType: DeviceType) => [
   },
 ];
 
-export default function ShopPageContent () {
+export default function ShopPageContent() {
   return (
     <Paper
       title={<div />}
       content={
         <Content />
-        }
+      }
     />
   );
 }
@@ -96,7 +96,7 @@ const Content = () => {
           ].join(' ')}
           >
             <GridList cellHeight="auto" className={classes.gridList} cols={3}>
-              {tileData(value).map((tile, index:number) => (
+              {tileData(value).map((tile, index: number) => (
                 <GridListTile key={index} cols={tile.cols || 1}>
                   <Image
                     src={tile.img}
@@ -113,8 +113,8 @@ const Content = () => {
 };
 
 type ImageProps = {
-    src: string;
-    alt: string;
+  src: string;
+  alt: string;
 }
 
 const Image = (props: ImageProps) => {

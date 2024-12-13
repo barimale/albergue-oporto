@@ -20,7 +20,7 @@ const useStyles = makeStyles({
   },
 });
 
-function createData (day: string, time: string, active: boolean) {
+function createData(day: string, time: string, active: boolean) {
   return {
     day, time, active,
   };

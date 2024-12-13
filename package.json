@@ -1,0 +1,102 @@
+{
+  "name": "albergue-oporto",
+  "version": "0.2.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@material-ui/pickers": "^3.3.10",
+    "@monsonjeremy/react-leaflet": "^3.2.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "clipboard-copy": "^4.0.1",
+    "dts-generator": "^3.0.0",
+    "formik": "^2.2.6",
+    "formik-material-ui": "^3.0.1",
+    "gpx-builder": "^3.6.38",
+    "gpxparser": "^3.0.7",
+    "i18next": "^21.10.0",
+    "i18next-browser-languagedetector": "^6.1.0",
+    "i18next-http-backend": "^1.2.1",
+    "i18next-localstorage-backend": "^3.1.2",
+    "i18next-localstorage-cache": "^1.1.1",
+    "leaflet": "^1.7.1",
+    "leaflet-gpx": "^1.5.1",
+    "leaflet-iconmaterial": "^1.1.0",
+    "leaflet.awesome-markers": "^2.0.5",
+    "react": "^17.0.2",
+    "react-detectable-overflow": "^0.5.0",
+    "react-device-detect": "^1.17.0",
+    "react-dom": "^17.0.2",
+    "react-google-recaptcha": "^2.1.0",
+    "react-i18next": "^11.18.6",
+    "react-responsive": "^8.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^5.0.0",
+    "react-sizeme": "^3.0.1",
+    "react-transition-group": "^4.4.1",
+    "styled-components": "^5.2.3",
+    "typescript": "4.5.3",
+    "web-vitals": "^1.0.1",
+    "yup": "^0.32.9"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "scripts": {
+    "setup": "rimraf ./node_modules && rimraf ./yarn.lock && yarn install --force",
+    "start": "react-scripts start .env.development",
+    "build-fast": "react-scripts build",
+    "build": "npx ts-node --project tsconfig.node.json ./src/sitemap-builder.ts && yarn build-fast",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "yarn build && firebase deploy",
+    "deploy-miniserver": "yarn build && scp -r ./build/* albergue@192.168.1.5:/var/www/albergueperegrinosporto.pt"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.7.0",
+    "@types/leaflet-gpx": "^1.3.1",
+    "@types/leaflet.awesome-markers": "^2.0.24",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/react-google-recaptcha": "^2.1.0",
+    "@types/react-responsive": "^8.0.2",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/react-transition-group": "^4.4.1",
+    "@types/styled-components": "^5.1.9",
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "@typescript-eslint/parser": "^5.6.0",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb": "^19.0.2",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0"
+  }
+}

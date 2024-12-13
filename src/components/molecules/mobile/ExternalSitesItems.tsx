@@ -10,7 +10,7 @@ import { configSection, configSectionType } from '../../../routes/RouterConfigur
 import { ExternalSitesConfiguration } from '../../../routes/ExternalSitesConfiguration';
 import { fifthMain } from '../../../customTheme';
 
-type ExternalSitesProps ={
+type ExternalSitesProps = {
   handleClose: () => void;
 }
 

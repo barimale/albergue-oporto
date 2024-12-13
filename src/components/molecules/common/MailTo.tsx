@@ -44,16 +44,16 @@ export const MailTo = (props: CommunicateProps) => {
             }}
             />
             {showLong === true && (
-            <Typography
-              noWrap
-              style={{
-                fontSize: context === DeviceType.isDesktopOrLaptop ? '16px' : '10px',
-                paddingLeft: context === DeviceType.isDesktopOrLaptop ? '16px' : '10px',
-                color: `${thirdMain}`,
-              }}
-            >
-              {emailAddress}
-            </Typography>
+              <Typography
+                noWrap
+                style={{
+                  fontSize: context === DeviceType.isDesktopOrLaptop ? '16px' : '10px',
+                  paddingLeft: context === DeviceType.isDesktopOrLaptop ? '16px' : '10px',
+                  color: `${thirdMain}`,
+                }}
+              >
+                {emailAddress}
+              </Typography>
             )}
           </div>
         </IconButton>

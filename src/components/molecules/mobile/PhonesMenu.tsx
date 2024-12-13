@@ -38,11 +38,11 @@ const PhonesMenu = (props: PhonesMenuProps) => {
         anchorReference="anchorPosition"
         TransitionComponent={Fade}
         anchorPosition={
-        {
-          top: menuHeight,
-          left: props.left,
+          {
+            top: menuHeight,
+            left: props.left,
+          }
         }
-}
       >
         <PhoneItems
           handleClose={handleClose}

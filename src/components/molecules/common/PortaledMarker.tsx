@@ -8,12 +8,12 @@ import PopupEntry from './PopupEntry';
 import { DeviceContextConsumer, DeviceType } from '../../../contexts/DeviceContext';
 
 type PortaledMarkerProps = {
-    index: number;
-    outerIndex: number;
-    keyy: string;
-    item: MapItem;
-    prefix: string;
-    icon: L.DivIcon | L.Icon;
+  index: number;
+  outerIndex: number;
+  keyy: string;
+  item: MapItem;
+  prefix: string;
+  icon: L.DivIcon | L.Icon;
 };
 
 export const PortaledMarker = (props: PortaledMarkerProps) => {
@@ -103,12 +103,12 @@ const ApplePortaledMarker = (props: PortaledMarkerProps) => {
 };
 
 type PortaledMarkerWithChildrenProps = {
-    index: number;
-    outerIndex: number;
-    keyy: string;
-    position: L.LatLngTuple;
-    prefix: string;
-    icon: L.Icon | L.DivIcon;
+  index: number;
+  outerIndex: number;
+  keyy: string;
+  position: L.LatLngTuple;
+  prefix: string;
+  icon: L.Icon | L.DivIcon;
 };
 
 export const PortaledMarkerWithChildren = (

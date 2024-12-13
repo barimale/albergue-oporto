@@ -5,7 +5,7 @@ import { withSize } from 'react-sizeme';
 import { PhoneTo } from '../common/PhoneTo';
 import { PhoneToMobile } from '../common/PhoneToMobile';
 
-type PhoneItemsProps ={
+type PhoneItemsProps = {
   handleClose: () => void;
 }
 

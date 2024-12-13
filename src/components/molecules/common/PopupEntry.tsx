@@ -3,7 +3,7 @@ import React, { PropsWithChildren, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 
 type PopupEntryProps = {
-    parentId: string;
+  parentId: string;
 }
 
 const PopupEntry: React.FC<PropsWithChildren<PopupEntryProps>> = (

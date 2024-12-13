@@ -113,7 +113,7 @@ export default sizeMe({
   monitorWidth: true,
 })(MenuWithItems);
 
-type MenuItemsProps ={
+type MenuItemsProps = {
   handleClose: () => void;
 }
 

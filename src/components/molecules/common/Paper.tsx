@@ -3,11 +3,11 @@ import React from 'react';
 import { DeviceContextConsumer } from '../../../contexts/DeviceContext';
 
 type PaperProps = {
-    content: JSX.Element;
-    title: JSX.Element;
+  content: JSX.Element;
+  title: JSX.Element;
 }
 
-export default function Paper (props: PaperProps) {
+export default function Paper(props: PaperProps) {
   const { content, title } = props;
 
   return (

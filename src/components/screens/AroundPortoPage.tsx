@@ -7,7 +7,7 @@ const AroundPortoPageContent = lazy(() => import('../pages/AroundPortoPageConten
 export const Path = '/around';
 export const Title = 'Around Porto';
 
-export function AroundPortoPage() {
+export function AroundPortoPage () {
   return (
     <Suspense fallback={
       <LoadingInProgress />

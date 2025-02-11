@@ -8,7 +8,7 @@ import { RestaurantsContent } from '../organisms/RestaurantsContent';
 import { LivingContent } from '../organisms/LivingContent';
 import { SightseeingContent } from '../organisms/SightseeingContent';
 
-export default function AroundPortoPageContent() {
+export default function AroundPortoPageContent () {
   return (
     <ContentWithTabs />
   );

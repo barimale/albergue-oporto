@@ -104,7 +104,7 @@ const tileData = (deviceType: string) => [
   },
 ];
 
-export default function GalleryPageContent() {
+export default function GalleryPageContent () {
   return (
     <Content />
   );

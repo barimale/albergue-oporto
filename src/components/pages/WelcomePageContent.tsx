@@ -12,7 +12,7 @@ import { AboutUsContent } from '../organisms/AboutUsContent';
 import { PriceContent } from '../organisms/PriceContent';
 import { SafetyContent } from '../organisms/SafetyContent';
 
-export default function WelcomePageContent() {
+export default function WelcomePageContent () {
   return (
     <ContentWithTabs />
   );

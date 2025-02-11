@@ -8,7 +8,7 @@ import TheWayTabs, { indexer, parentId, tabPrefix } from '../molecules/common/Th
 import { PortugeseCentralContent } from '../organisms/PortugeseCentralContent';
 import { PortugeseCoastContent } from '../organisms/PortugeseCoastContent';
 
-export default function TheWayPageContent() {
+export default function TheWayPageContent () {
   return (
     <ContentWithTabs />
   );

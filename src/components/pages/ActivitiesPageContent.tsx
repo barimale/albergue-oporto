@@ -14,7 +14,7 @@ const indexer = (type: DeviceType, index: number) => {
   return index;
 };
 
-export default function ActivitiesPageContent() {
+export default function ActivitiesPageContent () {
   return (
     <ContentWithTabs />
   );

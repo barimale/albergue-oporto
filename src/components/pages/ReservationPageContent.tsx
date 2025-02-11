@@ -20,7 +20,7 @@ export type ReservationDetails = {
   residenceCountry: string;
 }
 
-export default function ReservationPageContent() {
+export default function ReservationPageContent () {
   return (
     <ReservationForm />
     // <ExternalReservation />
@@ -35,7 +35,7 @@ const ExternalReservation = () => {
   );
 
   useEffect(() => {
-    function removeMenu() {
+    function removeMenu () {
       if (iframeRef && iframeRef?.current) {
         const allDivs = iframeRef.current.querySelectorAll('div.col-sm-2');
         iframeRef.current.removeChild(allDivs[0]);

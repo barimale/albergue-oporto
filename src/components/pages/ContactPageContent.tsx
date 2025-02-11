@@ -12,7 +12,7 @@ import { DeviceContextConsumer, DeviceType } from '../../contexts/DeviceContext'
 import { PortaledMarkerWithChildren } from '../molecules/common/PortaledMarker';
 import { LoadingInProgress } from '../molecules/common/LoadingInProgress';
 
-export default function ContactPageContent() {
+export default function ContactPageContent () {
   return (
     <Content />
   );

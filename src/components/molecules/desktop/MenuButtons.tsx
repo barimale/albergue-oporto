@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { useTheme } from '@material-ui/core/styles';
 import { configSection, configSectionType, OrderedSectionsConfiguration, GetFullPathTo } from '../../../routes/RouterConfiguration';
 
-export default function MenuButtons(props: any) {
+export default function MenuButtons (props: any) {
   const { t } = useTranslation();
   const theme = useTheme();
 

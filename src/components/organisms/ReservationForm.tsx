@@ -270,7 +270,7 @@ export const ReservationForm = () => {
   );
 };
 
-export function Today(): string {
+export function Today (): string {
   const today = new Date();
   const dd = String(today.getDate()).padStart(2, '0');
   const mm = String(today.getMonth() + 1).padStart(2, '0');
@@ -279,7 +279,7 @@ export function Today(): string {
   return `${yyyy}-${mm}-${dd}`;
 }
 
-export function Tomorrow(): string {
+export function Tomorrow (): string {
   const today = new Date();
   const dd = String(today.getDate() + 1).padStart(2, '0');
   const mm = String(today.getMonth() + 1).padStart(2, '0');

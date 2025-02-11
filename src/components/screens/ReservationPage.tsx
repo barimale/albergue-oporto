@@ -7,7 +7,7 @@ const ReservationPageContent = lazy(() => import('../pages/ReservationPageConten
 export const Path = '/reservation';
 export const Title = 'Reservations';
 
-export function ReservationScreen() {
+export function ReservationScreen () {
   return (
     <Suspense fallback={
       <LoadingInProgress />

@@ -10,7 +10,7 @@ import useOverEffectHook from '../../../hooks/useOverEffectHook';
 import useHover from '../../../hooks/useHover';
 import { fifthMain } from '../../../customTheme';
 
-export default function ExternalSitesButtons(props: any) {
+export default function ExternalSitesButtons (props: any) {
   const theme = useTheme();
 
   return (

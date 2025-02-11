@@ -7,7 +7,7 @@ type PaperProps = {
   title: JSX.Element;
 }
 
-export default function Paper(props: PaperProps) {
+export default function Paper (props: PaperProps) {
   const { content, title } = props;
 
   return (

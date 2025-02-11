@@ -24,7 +24,7 @@ const useStyles = makeStyles({
   },
 });
 
-function createData(name: string, price: number, sheetsIncluded: boolean) {
+function createData (name: string, price: number, sheetsIncluded: boolean) {
   return {
     name, price, sheetsIncluded,
   };

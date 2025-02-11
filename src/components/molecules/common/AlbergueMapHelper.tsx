@@ -25,7 +25,7 @@ export const albergueIcon = new L.AwesomeMarkers.Icon({
   iconColor: 'white',
 });
 
-function defaultIcon(color: 'red' | 'darkred' | 'orange' | 'green' | 'darkgreen' | 'blue' | 'purple' | 'darkpurple' | 'cadetblue') {
+function defaultIcon (color: 'red' | 'darkred' | 'orange' | 'green' | 'darkgreen' | 'blue' | 'purple' | 'darkpurple' | 'cadetblue') {
   return new L.AwesomeMarkers.Icon({
     icon: 'circle',
     prefix: 'fa',

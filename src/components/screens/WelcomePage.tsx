@@ -6,7 +6,7 @@ const WelcomePageContent = lazy(() => import('../pages/WelcomePageContent'));
 
 export const Title = 'Main page';
 
-export function WelcomeScreen() {
+export function WelcomeScreen () {
   return (
     <Suspense fallback={
       <LoadingInProgress />

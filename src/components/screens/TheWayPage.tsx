@@ -7,7 +7,7 @@ const TheWayPageContent = lazy(() => import('../pages/TheWayPageContent'));
 export const Path = '/theway';
 export const Title = 'Opened Albergues';
 
-export function TheWayPage() {
+export function TheWayPage () {
   return (
     <Suspense fallback={
       <LoadingInProgress />

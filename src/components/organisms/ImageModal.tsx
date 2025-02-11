@@ -47,7 +47,7 @@ type ImageModalProps = {
   item: ImageDetails;
 }
 
-export default function ImageModal(props: ImageModalProps) {
+export default function ImageModal (props: ImageModalProps) {
   const classes = useStyles();
   const { isDisplayed, onHide, item } = props;
   const [open, setOpen] = React.useState(false);

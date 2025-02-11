@@ -7,7 +7,7 @@ const ContactPageContent = lazy(() => import('../pages/ContactPageContent'));
 export const Path = '/location';
 export const Title = 'Our location';
 
-export function ContactPage() {
+export function ContactPage () {
   return (
     <Suspense fallback={
       <LoadingInProgress />

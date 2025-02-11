@@ -10,7 +10,7 @@ interface TabPanelProps {
   tabPrefix: string;
 }
 
-export function TabPanel(props: TabPanelProps) {
+export function TabPanel (props: TabPanelProps) {
   const { children, value, index, parentId, tabPrefix, ...other } = props;
 
   // WIP: scrollButtons={'on'} switch to Tab
@@ -39,7 +39,7 @@ export function TabPanel(props: TabPanelProps) {
   );
 }
 
-export function a11yProps(index: any, parentId: string, tabPrefix: string) {
+export function a11yProps (index: any, parentId: string, tabPrefix: string) {
   return {
     id: `${tabPrefix}-${index}`,
     'aria-controls': `${parentId}-${index}`,

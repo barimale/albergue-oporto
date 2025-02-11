@@ -30,7 +30,7 @@ export const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function TopMenu(props: any) {
+function TopMenu (props: any) {
   const classes = useStyles();
   const theme = useTheme();
   const [paddingRight, setPaddingRight] = useState<number>(0);

@@ -1,0 +1,19 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: albergue-oporto
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: albergue-oporto
+  template:
+    metadata:
+      labels:
+        app: albergue-oporto
+    spec:
+      containers:
+      - name: albergue-oporto
+        image: barimale/albergue-oporto
+        ports:
+        - containerPort: 3000
